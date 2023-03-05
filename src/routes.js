@@ -3,7 +3,7 @@ import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
 import Menu from "./components/Menu";
 
-const App = () => {
+const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Menu />
@@ -16,4 +16,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default AppRoutes;
