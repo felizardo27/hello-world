@@ -1,16 +1,16 @@
-import { Link } from 'react-router-dom'
 import styles from './Menu.module.scss'
+import LinkMenu from '../LinkMenu'
 
 const Menu = () => {
   return (
     <header>
         <nav className={styles.nav}>
-            <Link className={styles.link} to="/">
-                Home
-            </Link>
-            <Link className={styles.link} to="/aboutme">
-                About Me
-            </Link>
+            <LinkMenu to="/">
+              Home
+            </LinkMenu>
+            <LinkMenu to="/aboutme">
+              About Me
+            </LinkMenu>
         </nav>
     </header>
   )

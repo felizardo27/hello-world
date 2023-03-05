@@ -1,0 +1,13 @@
+.link {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--cor-fonte-principal);
+
+    &__underline {
+        text-decoration: underline;
+    }
+
+    &:hover {
+        color: var(--azul-medio);
+    }
+}
