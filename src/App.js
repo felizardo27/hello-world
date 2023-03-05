@@ -1,13 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
 
-console.log(window.location)
-
-const pagina = window.location.pathname === '/' ? <Home /> : <AboutMe />
-
 const App = () => {
   return (
-    pagina
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/aboutme" element={<AboutMe />}/>
+        <Route path="*" element={<h1>Not Found</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
