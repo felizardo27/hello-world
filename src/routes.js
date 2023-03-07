@@ -11,7 +11,7 @@ const AppRoutes = () => {
       <Menu />
       <Routes>
         <Route path="/" element={<BasePage />} >
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/aboutme" element={<AboutMe />} />
         </Route>
         <Route path="*" element={<h1>Not Found</h1>} />
