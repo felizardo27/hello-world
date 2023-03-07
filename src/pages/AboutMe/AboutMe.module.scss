@@ -1,7 +1,7 @@
 .photoAboutMe {
     margin-bottom: .5rem;
     margin-left: 1.5rem;
-    width: 40vw;
+    width: 30vw;
     float: right;
 }
 
@@ -32,7 +32,7 @@
 
 @media (max-width: 744px) {
     .photoAboutMe {
-        width: 100%;
+        width: 70%;
     }
 
     .subtitulo {
