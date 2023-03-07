@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import BasePage from "components/BasePage";
-import Post from "components/Post";
+import Post from "pages/Post";
 
 const AppRoutes = () => {
   return (
