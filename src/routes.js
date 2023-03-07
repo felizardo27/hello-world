@@ -5,19 +5,23 @@ import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import BasePage from "components/BasePage";
 import Post from "pages/Post";
+import NotFound from "pages/NotFound";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Menu />
       <Routes>
+
         <Route path="/" element={<BasePage />} >
           <Route index element={<Home />} />
           <Route path="/aboutme" element={<AboutMe />} />
           <Route path="/post/:id" element={<Post />} />
         </Route>
-        <Route path="*" element={<h1>Not Found</h1>} />
+        
+        <Route path="*" element={<NotFound />} />
       </Routes>
+      
       <Footer />
     </BrowserRouter>
   );

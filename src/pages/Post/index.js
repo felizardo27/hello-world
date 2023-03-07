@@ -9,6 +9,8 @@ const Post = () => {
 
     const post = posts.find(post => post.id === Number(params.id))
 
+    if (!post) return <h1>Página não encontrada...</h1>
+
     return (
         <BasePost
             photoCover={`/assets/posts/${post.id}/capa.png`}
