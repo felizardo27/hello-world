@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import styles from './Post.module.scss'
 import posts from 'json/posts.json'
 import BasePost from 'components/BasePost'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
 const Post = () => {
     const params = useParams()
@@ -13,7 +14,11 @@ const Post = () => {
             photoCover={`/assets/posts/${post.id}/capa.png`}
             title={post.title}
         >
-            texto...
+            <div className={styles.postMarkdown__container}>
+                <ReactMarkdown>
+                    {post.text}
+                </ReactMarkdown>
+            </div>
         </BasePost>
     )
 }
