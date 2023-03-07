@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Menu from "./components/Menu";
 import Footer from "components/Footer";
 import BasePage from "components/BasePage";
+import Post from "components/Post";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Route path="/" element={<BasePage />} >
           <Route index element={<Home />} />
           <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/post/:id" element={<Post />} />
         </Route>
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
