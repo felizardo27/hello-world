@@ -1,0 +1,45 @@
+.basePost__container {
+
+    color: var(--cor-font-post);
+    position: relative;
+
+    .cover, .title {
+        height: 204px;
+
+        @media (max-width: 744px) {
+            height: 104px;
+        }
+    }
+
+    .cover {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+    .title {
+        font-family: var(--fonte-secundaria);
+        padding: 0 7.5rem;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 744px) {
+            padding: 0 1rem;
+            font-size: 2rem;
+        }
+    }
+
+    .content__container {
+        padding: 2.5rem 7.5rem 4.5rem;
+
+        @media (max-width: 744px) {
+            padding: 2rem 1.5rem 1.5rem;
+        }
+    }
+
+}
