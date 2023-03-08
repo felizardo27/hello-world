@@ -1,8 +1,11 @@
 import BaseButton from 'components/BaseButton'
 import styles from './NotFound.module.scss'
 import dogError from 'assets/error_404.png'
+import { useNavigate } from 'react-router-dom'
 
 const NotFound = () => {
+
+    const navigate = useNavigate()
 
     return (
         <>
@@ -17,7 +20,10 @@ const NotFound = () => {
                 <p className={styles.paragraph}>
                     Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
-                <div className={styles.button}>
+                <div 
+                    className={styles.button}
+                    onClick={() => navigate(-1)}
+                >
                     <BaseButton size='lg'>
                         Voltar
                     </BaseButton>
