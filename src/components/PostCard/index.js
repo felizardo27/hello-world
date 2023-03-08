@@ -8,7 +8,7 @@ const PostCard = ({post}) => {
       <div className={styles.post}>
         <img
           className={styles.cover}
-          src={`assets/posts/${post.id}/capa.png`}
+          src={`/assets/posts/${post.id}/capa.png`}
           alt='Post cover'
         />
         <h2 className={styles.title}>{post.title}</h2>
