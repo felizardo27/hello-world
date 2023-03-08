@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import styles from './PostCard.module.scss'
+import BaseButton from 'components/BaseButton'
 
 const PostCard = ({post}) => {
   return (
@@ -11,7 +12,7 @@ const PostCard = ({post}) => {
           alt='Post cover'
         />
         <h2 className={styles.title}>{post.title}</h2>
-        <button className={styles.button}>Ler</button>
+        <BaseButton>Ler</BaseButton>
       </div>
     </Link>
   )

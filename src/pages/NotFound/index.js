@@ -1,3 +1,4 @@
+import BaseButton from 'components/BaseButton'
 import styles from './NotFound.module.scss'
 import dogError from 'assets/error_404.png'
 
@@ -17,9 +18,9 @@ const NotFound = () => {
                     Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
                 </p>
                 <div className={styles.button}>
-                    <button>
+                    <BaseButton size='lg'>
                         Voltar
-                    </button>
+                    </BaseButton>
                 </div>
                 <img 
                     className={styles.image__dog}

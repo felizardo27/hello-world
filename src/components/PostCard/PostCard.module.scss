@@ -27,24 +27,6 @@
         }
     }
 
-    .button {
-        display: inline-block;
-        border-radius: 24px;
-        padding: 0.75rem 1.5rem;
-        font-size: 1.125rem;
-        line-height: 1.125rem;
-        background-color: var(--azul-medio);
-        color: var(--branco);
-        border: 3px solid var(--azul-medio);
-        cursor: pointer;
-        transition: 0.5s;
-
-        &:hover {
-            background-color: var(--azul-escuro);
-            border: 3px solid var(--azul-escuro);
-        }
-    }
-
     @media (max-width: 1100px) {
         width: 336px
     }
