@@ -1,4 +1,4 @@
-import { Route, Routes, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import styles from './Post.module.scss'
 import posts from 'json/posts.json'
 import BasePost from 'components/BasePost'
@@ -14,22 +14,18 @@ const Post = () => {
     if (!post) return <NotFound />
 
     return (
-        <Routes>
-            <Route path='*' element={<BasePage />}>
-                <Route index element={
-                    <BasePost
-                        photoCover={`/assets/posts/${post.id}/capa.png`}
-                        title={post.title}
-                    >
-                    <div className={styles.postMarkdown__container}>
-                        <ReactMarkdown>
-                            {post.text}
-                        </ReactMarkdown>
-                    </div>
-                </BasePost>
-                } />
-            </Route>
-        </Routes>
+        <BasePage>
+            <BasePost
+                photoCover={`/assets/posts/${post.id}/capa.png`}
+                title={post.title}
+            >
+                <div className={styles.postMarkdown__container}>
+                    <ReactMarkdown>
+                        {post.text}
+                    </ReactMarkdown>
+                </div>
+            </BasePost>
+        </BasePage>
     )
 }
 
